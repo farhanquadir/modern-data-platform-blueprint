@@ -1,0 +1,7 @@
+modern_data_platform:
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/warehouse/warehouse.db
+      threads: 4
+  target: dev

@@ -1,0 +1,27 @@
+dataset: online_retail
+description: Raw online retail transactions from UCI
+required_columns:
+  InvoiceNo: string
+  StockCode: string
+  Description: string
+  Quantity: integer
+  InvoiceDate: datetime
+  UnitPrice: float
+  CustomerID: float
+  Country: string
+rules:
+  not_null_columns:
+  - InvoiceNo
+  - StockCode
+  - Quantity
+  - InvoiceDate
+  - UnitPrice
+  - Country
+  non_negative_columns:
+  - UnitPrice
+  allowed_negative_columns:
+  - Quantity
+  unique_key_hint:
+  - InvoiceNo
+  - StockCode
+  - InvoiceDate

@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: main
+    tables:
+      - name: raw_transactions
+
+models:
+  - name: stg_transactions
+    columns:
+      - name: invoice_no
+        tests: [not_null]
+      - name: stock_code
+        tests: [not_null]
+      - name: invoice_ts
+        tests: [not_null]
+      - name: unit_price
+        tests:
+          - not_null
+  - name: dim_customers
+    columns:
+      - name: customer_key
+        tests: [unique, not_null]
+  - name: dim_products
+    columns:
+      - name: product_key
+        tests: [unique, not_null]
+  - name: fct_order_lines
+    columns:
+      - name: order_line_id
+        tests: [unique, not_null]
