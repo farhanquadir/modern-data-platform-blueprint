@@ -131,7 +131,7 @@ Analytics-ready tables are exported as CSV files.
 5. Visualize outputs
 
 A plotting script produces summary charts for portfolio presentation.
-
+```
 ## Future Work
 
 Potential enhancements include:
@@ -141,3 +141,4 @@ Potential enhancements include:
 - Real-time ingestion
 - CI/CD workflows
 - Cloud deployment
+
