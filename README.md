@@ -65,6 +65,24 @@ This project uses the **UCI Online Retail** dataset, a public transactional data
 
 It is a good fit for demonstrating a business-oriented warehouse pipeline because it resembles retail sales data commonly used in reporting and analytics scenarios.
 
+## Key Outputs
+
+### Customer Analytics
+
+- ai_customer_context
+
+### Revenue Analytics
+
+- mart_monthly_revenue
+
+### Geographic Analytics
+
+- mart_country_sales
+
+### Customer Segmentation
+
+- mart_top_customers
+
 ## Repository structure
 
 ```text
@@ -113,3 +131,13 @@ Analytics-ready tables are exported as CSV files.
 5. Visualize outputs
 
 A plotting script produces summary charts for portfolio presentation.
+
+## Future Work
+
+Potential enhancements include:
+
+- Snowflake migration
+- Databricks implementation
+- Real-time ingestion
+- CI/CD workflows
+- Cloud deployment
